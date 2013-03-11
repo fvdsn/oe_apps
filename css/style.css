@@ -38,6 +38,7 @@ a {
     color: white;
     cursor: pointer;
     -webkit-transition: background 250ms linear;
+    -webkit-user-select: none;
 }
 .oe_button:hover{
     background: rgb(139, 91, 221);
@@ -152,6 +153,31 @@ img.oe_picture{
 }
 .oe_app_description .oe_button.oe_install_button.oe_installed:hover .oe_dropdown{
     color: white;
+}
+.oe_app_description .oe_button.oe_install_button .oe_dropdown_menu {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top:64px;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 3px;
+    border: solid 1px rgb(230, 230, 230);
+    color: #333;
+    text-shadow: none;
+    font-size: 16px;
+    line-height: 42px;
+    box-shadow: 0px 2px rgb(230,230,230), 0px 2px 10px rgba(0, 0, 0, 0.07);
+}
+.oe_app_description .oe_button.oe_install_button .oe_dropdown_menu .oe_entry{
+    border-bottom: dashed 1px rgba(0,0,0,0.1);
+    -webkit-transition: all 250ms linear;
+    border-radius:3px;
+}
+.oe_app_description .oe_button.oe_install_button .oe_dropdown_menu .oe_entry:hover{
+    background: rgba(0,0,0,0.03);
+}
+.oe_app_description .oe_button.oe_install_button .oe_dropdown_menu .oe_entry:last-child{
+    border-bottom: none;
 }
 .oe_app_description .oe_app_logo{
     float: left;
