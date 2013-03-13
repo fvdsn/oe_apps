@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+
+<html style="height: 100%;">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-type" content="text/html; charset=us-ascii">
+
+  <title>Apps - OpenERP</title>
+  <link rel="shortcut icon" href="http://localhost:8069/web/static/src/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="pos-ffx-2_files/full.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/jquery-ui-1.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/jquery-ui-timepicker-addon.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/ui.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/tipsy.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/jquery.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/base.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/data_export.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/jquery_002.css" type="text/css">
+  <link rel="stylesheet" href="pos-ffx-2_files/kanban_002.css" type="text/css">
+  <script src="pos-ffx-2_files/ga.js" async="" type="text/javascript">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/en-US_002.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/core.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/parser.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/sugarpak.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/extras.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery-1.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_012.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_002.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_013.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_009.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/spin.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_006.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_008.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery-ui-1.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery-ui-timepicker-addon.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_004.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_007.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_003.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_011.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/qweb2.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/underscore.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/underscore_002.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/backbone.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/jquery_005.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/py.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/boot.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/testing.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/pyeval.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/corelib.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/coresetup.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/dates.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/formats.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/chrome.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/views.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/data.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/data_export.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/search.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/view_form.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/view_list.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/view_list_editable.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/view_tree.js">
+</script>
+  <script type="text/javascript" src="pos-ffx-2_files/kanban_002.js">
+</script>
+  <script type="text/javascript">
+          $(function() {
+                var s = new openerp.init(["web", "web_kanban"]);
+                var wc = new s.web.WebClient();wc.appendTo($(document.body));
+            });
+  </script>
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/base_diagram_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/process.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/flotr2.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/graph.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/view_editor.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/dhtmlxscheduler_glossy_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/web_calendar_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/modules.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/web_tests_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/gantt_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/dhtmlxgantt.css">
+  <script src="pos-ffx-2_files/en-US_003.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/raphael_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/jquery_014.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/vec2_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/graph_004.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/diagram_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/process.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dropdown.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/bean.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Flotr_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/DefaultOptions_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Color_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Date.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/DOM.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/EventAdapter_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Text.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Graph.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Axis_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Series.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/lines.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/bars.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/bubbles.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/candles_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/gantt_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/markers.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/pie_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/points_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/radar.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/timeline.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/crosshair_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/download_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/grid.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/hit_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/selection_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/labels_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/legend_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/spreadsheet.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/titles_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/graph_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/view_editor_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxscheduler.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxscheduler_minical.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/calendar.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/apps.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/web_tests_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxcommon.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxgantt.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/gantt_003.js" type="text/javascript">
+</script>
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/base_diagram.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/flotr2_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/graph_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/view_editor_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/dhtmlxscheduler_glossy.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/web_calendar.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/modules_002.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/kanban.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/base_setup.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/zocial.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/auth_oauth.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/mail.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/mail_group.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/web_tests.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/share.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/portal.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/loempia.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/gantt.css">
+  <link type="text/css" rel="stylesheet" href="pos-ffx-2_files/dhtmlxgantt_002.css">
+  <script src="pos-ffx-2_files/en-US.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/raphael.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/jquery_010.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/vec2.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/graph.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/diagram.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dropdown_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/bean_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Flotr.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/DefaultOptions.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Color.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Date_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/DOM_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/EventAdapter.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Text_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Graph_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Axis.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/Series_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/lines_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/bars_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/bubbles_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/candles.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/gantt.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/markers_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/pie.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/points.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/radar_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/timeline_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/crosshair.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/download.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/grid_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/hit.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/selection.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/labels.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/legend.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/spreadsheet_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/titles.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/graph_003.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/view_editor.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxscheduler_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxscheduler_minical_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/calendar_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/apps_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/kanban.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/auth_oauth.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/jquery_015.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/mail.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/mail_followers.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/many2many_tags_email.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/auth_signup.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/auth_oauth_signup.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/web_tests.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/document.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/share.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/portal_anonymous.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/web_analytics.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/loempia.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxcommon_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/dhtmlxgantt_002.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/gantt_004.js" type="text/javascript">
+</script>
+  <script src="pos-ffx-2_files/en-US.js" type="text/javascript">
+</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <meta name="generator" content="Docutils 0.8.1: http://docutils.sourceforge.net/">
+
+  <title></title>
+  <link rel="stylesheet" href="pos-ffx-2_files/html4css1.html" type="text/css">
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+        <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+        <script>CFInstall.check({mode: "overlay"});</script>
+        <![endif]-->
+
+  <div class="openerp openerp_webclient_container">
+    <table class="oe_webclient">
+      <tbody>
+        <tr>
+          <td colspan="2" class="oe_topbar">
+            <ul style="height: auto;" class="oe_menu">
+              <li style="display: none;"><a href="#menu_id=3&amp;action=" class="oe_menu_toggler oe_active" data-menu="3" data-action-model="" data-action-id=""><span class="oe_menu_text">Settings</span></a></li>
+
+              <li class="oe_menu_more_container" style="display: none;">
+                <span class="oe_topbar_item oe_menu_more_link oe_dropdown_toggle oe_dropdown_arrow">More</span>
+
+                <ul class="oe_menu_more oe_dropdown_menu"></ul>
+              </li>
+            </ul><span class="oe_user_menu oe_topbar_item oe_dropdown_toggle oe_dropdown_arrow"><img src="pos-ffx-2_files/image_004.png" class="oe_topbar_avatar" data-default-src="http://localhost:8069/web/static/src/img/user_menu_avatar.png"> <span class=
+            "oe_topbar_name">Administrator (bouba)</span></span>
+
+            <ul class="oe_dropdown_menu">
+              <li><a href="#" data-menu="settings">Preferences</a></li>
+
+              <li><a href="#" data-menu="about">About OpenERP</a></li>
+
+              <li><a href="#" data-menu="help">Help</a></li>
+
+              <li><a href="#" data-menu="logout">Log out</a></li>
+            </ul>
+
+            <div class="oe_systray"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="display: table-cell;" class="oe_leftbar" valign="top">
+            <a class="oe_logo" href="http://localhost:8069/?ts=1363183491956&amp;debug"><span class="oe_logo_edit oe_logo_edit_admin">Edit Company data</span> <img src="pos-ffx-2_files/company_logo.png"></a>
+
+            <div class="oe_secondary_menus_container">
+              <div style="" class="oe_secondary_menu" data-menu-parent="3">
+                <div class="oe_secondary_menu_section">
+                  Modules
+                </div>
+
+                <ul class="oe_secondary_submenu">
+                  <li class="oe_active"><a href="#menu_id=60&amp;action=39" class="oe_menu_leaf" data-menu="60" data-action-model="ir.actions.client" data-action-id="39"><span class="oe_menu_text">Apps</span></a></li>
+
+                  <li><a href="#menu_id=61&amp;action=40" class="oe_menu_leaf" data-menu="61" data-action-model="ir.actions.client" data-action-id="40"><span class="oe_menu_text">Updates</span></a></li>
+
+                  <li><a href="#menu_id=59&amp;action=38" class="oe_menu_leaf" data-menu="59" data-action-model="ir.actions.act_window" data-action-id="38"><span class="oe_menu_text">Installed Modules</span></a></li>
+                </ul>
+
+                <div class="oe_secondary_menu_section">
+                  Users
+                </div>
+
+                <ul class="oe_secondary_submenu">
+                  <li><a href="#menu_id=89&amp;action=78" class="oe_menu_leaf" data-menu="89" data-action-model="ir.actions.act_window" data-action-id="78"><span class="oe_menu_text">Users</span></a></li>
+                </ul>
+
+                <div class="oe_secondary_menu_section">
+                  Translations
+                </div>
+
+                <ul class="oe_secondary_submenu">
+                  <li><a href="#menu_id=63&amp;action=44" class="oe_menu_leaf" data-menu="63" data-action-model="ir.actions.act_window" data-action-id="44"><span class="oe_menu_text">Load a Translation</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="oe_footer">
+              Powered by <a href="http://www.openerp.com/" target="_blank"><span>OpenERP</span></a>
+            </div>
+          </td>
+
+          <td class="oe_application">
+            <div>
+              <div class="">
+                <div class="oe_application">
+                  <div>
+                    <div class="oe_view_manager oe_view_manager_current">
+                      <table class="oe_view_manager_header">
+                        <colgroup>
+                          <col width="20%">
+                          <col width="35%">
+                          <col width="15%">
+                          <col width="30%">
+                        </colgroup>
+
+                        <tbody>
+                          <tr class="oe_header_row oe_header_row_top">
+                            <td colspan="2">
+                              <select class="oe_debug_view">
+                                <option selected="selected" value="">
+                                  Debug View#254
+                                </option>
+
+                                <option value="perm_read">
+                                  View Log (perm_read)
+                                </option>
+
+                                <option value="toggle_layout_outline">
+                                  Toggle Form Layout Outline
+                                </option>
+
+                                <option value="set_defaults">
+                                  Set Defaults
+                                </option>
+
+                                <option value="tests">
+                                  JS Tests
+                                </option>
+
+                                <option value="fields">
+                                  View Fields
+                                </option>
+
+                                <option value="fvg">
+                                  Fields View Get
+                                </option>
+
+                                <option value="manage_filters">
+                                  Manage Filters
+                                </option>
+                              </select>
+
+                              <h2 class="oe_view_title"><span class="oe_view_title_text oe_breadcrumb_title"><a href="#" class="oe_breadcrumb_item" data-id="breadcrumb_52">OpenERP Apps</a> <span class="oe_fade">/</span> <span class="oe_breadcrumb_item">Point of
+                              Sale</span></span></h2>
+                            </td>
+
+                            <td colspan="2">
+                              <div class="oe_view_manager_view_search">
+                                <div style="display: none;" autocomplete="off" class="oe_searchview ui-autocomplete-input">
+                                  <div class="oe_searchview_facets">
+                                    <div class="oe_searchview_input" tabindex="0" contenteditable="true"></div>
+
+                                    <div class="oe_tag oe_tag_dark oe_searchview_facet" tabindex="0">
+                                      <span class="oe_facet_remove">x</span> <span class="oe_facet_category oe_i">q</span> <span class="oe_facet_values"><span class="oe_facet_value">Featured</span></span>
+                                    </div>
+
+                                    <div class="oe_searchview_input" tabindex="0" contenteditable="true"></div>
+                                  </div>
+
+                                  <div class="oe_searchview_clear"></div>
+
+                                  <div class="oe_searchview_unfold_drawer" title="Advanced Search..."></div>
+
+                                  <div class="oe_searchview_drawer">
+                                    <div class="oe_searchview_filters oe_searchview_section">
+                                      <div>
+                                        <h3><span class="oe_i">q</span> Filters</h3>
+
+                                        <ul>
+                                          <li class="oe_selected">Featured</li>
+
+                                          <li>Extra</li>
+                                        </ul>
+                                      </div>
+
+                                      <div>
+                                        <h3><span class="oe_i">w</span> Group By...</h3>
+
+                                        <ul>
+                                          <li>Author</li>
+
+                                          <li>Category</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+
+                                    <div class="oe_searchview_custom oe_searchview_section">
+                                      <div>
+                                        <h3><span class="oe_i">M</span> Custom Filters</h3>
+
+                                        <ul class="oe_searchview_custom_list"></ul>
+                                      </div>
+                                    </div>
+
+                                    <div class="oe_searchview_advanced">
+                                      <h4>Advanced Search</h4>
+
+                                      <form>
+                                        <ul>
+                                          <li><span class="searchview_extended_prop_or">or</span> <select class="searchview_extended_prop_field">
+                                            <option selected="selected" value="all_depend_ids">
+                                              All Dependencies
+                                            </option>
+
+                                            <option value="application">
+                                              Application
+                                            </option>
+
+                                            <option value="approved">
+                                              Approved
+                                            </option>
+
+                                            <option value="author">
+                                              Author
+                                            </option>
+
+                                            <option value="auto_install">
+                                              Automatic Installation
+                                            </option>
+
+                                            <option value="category_id">
+                                              Category
+                                            </option>
+
+                                            <option value="changelog">
+                                              Changelog
+                                            </option>
+
+                                            <option value="changelog_html">
+                                              Changelog HTML
+                                            </option>
+
+                                            <option value="contributors">
+                                              Contributors
+                                            </option>
+
+                                            <option value="depend_ids">
+                                              Dependencies
+                                            </option>
+
+                                            <option value="description">
+                                              Description
+                                            </option>
+
+                                            <option value="description_html">
+                                              Description HTML
+                                            </option>
+
+                                            <option value="download_count">
+                                              Downloads
+                                            </option>
+
+                                            <option value="message_follower_ids">
+                                              Followers
+                                            </option>
+
+                                            <option value="id">
+                                              ID
+                                            </option>
+
+                                            <option value="icon_image">
+                                              Icon
+                                            </option>
+
+                                            <option value="message_is_follower">
+                                              Is a Follower
+                                            </option>
+
+                                            <option value="license">
+                                              License
+                                            </option>
+
+                                            <option value="maintainer">
+                                              Maintainer
+                                            </option>
+
+                                            <option value="message_ids">
+                                              Messages
+                                            </option>
+
+                                            <option value="name">
+                                              Module Name
+                                            </option>
+
+                                            <option value="shortdesc">
+                                              Name
+                                            </option>
+
+                                            <option value="release_date">
+                                              Release Date
+                                            </option>
+
+                                            <option value="repo_id">
+                                              Repository
+                                            </option>
+
+                                            <option value="image_ids">
+                                              Screenshots
+                                            </option>
+
+                                            <option value="sequence">
+                                              Sequence
+                                            </option>
+
+                                            <option value="serie_id">
+                                              Serie
+                                            </option>
+
+                                            <option value="message_summary">
+                                              Summary
+                                            </option>
+
+                                            <option value="summary">
+                                              Summary
+                                            </option>
+
+                                            <option value="message_unread">
+                                              Unread Messages
+                                            </option>
+
+                                            <option value="version">
+                                              Version
+                                            </option>
+
+                                            <option value="website">
+                                              Website
+                                            </option>
+
+                                            <option value="zip_id">
+                                              Zip
+                                            </option>
+                                          </select> <select class="searchview_extended_prop_op">
+                                            <option selected="selected" value="ilike">
+                                              contains
+                                            </option>
+
+                                            <option value="not ilike">
+                                              doesn't contain
+                                            </option>
+
+                                            <option value="=">
+                                              is equal to
+                                            </option>
+
+                                            <option value="!=">
+                                              is not equal to
+                                            </option>
+
+                                            <option value="&#226;&#710;&#402;">
+                                              is set
+                                            </option>
+
+                                            <option value="&#226;&#710;&#8222;">
+                                              is not set
+                                            </option>
+                                          </select> <span class="searchview_extended_prop_value"><input class="field_char"></span> <a class="searchview_extended_delete_prop button">x</a></li>
+                                        </ul><button class="oe_add_condition button" type="button">Add a condition</button><br>
+                                        <button class="oe_apply" type="submit">Apply</button>
+                                      </form>
+                                    </div>
+                                  </div><button type="button" class="oe_searchview_search" title="Search Again">Search</button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr class="oe_header_row">
+                            <td>
+                              <div class="oe_view_manager_buttons">
+                                <div style="display: none;" class="oe_kanban_buttons"></div>
+
+                                <div class="oe_form_buttons"></div>
+                              </div>
+                            </td>
+
+                            <td colspan="2">
+                              <div class="oe_view_manager_sidebar"></div>
+                            </td>
+
+                            <td>
+                              <ul class="oe_view_manager_switch oe_button_group oe_right">
+                                <li class="oe_e"><a original-title="Kanban view" class="oe_vm_switch_kanban" data-view-type="kanban"></a></li>
+
+                                <li class="oe_e"><a original-title="List view" class="oe_vm_switch_list" data-view-type="list"></a></li>
+
+                                <li class="oe_e active"><a original-title="Form view" class="oe_vm_switch_form" data-view-type="form"></a></li>
+                              </ul>
+
+                              <div class="oe_view_manager_pager oe_right">
+                                <div style="display: block;" class="oe_form_pager">
+                                  <div class="oe_pager_value">
+                                    <span class="oe_form_pager_state">4 / 23</span>
+                                  </div>
+
+                                  <ul class="oe_pager_group">
+                                    <li><a class="oe_i" type="button" data-pager-action="previous">(</a></li>
+
+                                    <li><a class="oe_i" type="button" data-pager-action="next">)</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div class="oe_view_manager_body">
+                        <div class="oe_view_manager_view_list"></div>
+
+                        <div class="oe_view_manager_view_form">
+                          <div style="opacity: 1;" class="oe_formview oe_view oe_cannot_create oe_cannot_edit oe_cannot_delete oe_form_readonly">
+                            <div class="oe_form_buttons"></div>
+
+                            <div class="oe_form_sidebar"></div>
+
+                            <div class="oe_form_pager"></div>
+
+                            <div class="oe_form_container">
+                              <div class="oe_form">
+                                <div class="">
+                                  <div class="oe_form_sheetbg">
+                                    <div class="oe_form_sheet oe_form_sheet_width">
+                                      <span original-title="" class="oe_form_field oe_form_field_image oe_avatar oe_left"><img src="pos-ffx-2_files/image_003.png" name="icon_image" border="1"></span>
+
+                                      <div class="oe_form_field_image_controls oe_edit_only">
+                                        <div class="oe_hidden_input_file">
+                                          <form class="oe_form_binary_form" method="post" enctype="multipart/form-data" action="/web/binary/upload">
+                                            <span original-title="" class="oe_form_field oe_form_field_image oe_avatar oe_left"><input name="session_id" value="" type="hidden"> <input name="callback" type="hidden"> Edit <input class="oe_form_binary_file" name="ufile" accept=
+                                            "image/*" type="file"></span>
+                                          </form><span original-title="" class="oe_form_field oe_form_field_image oe_avatar oe_left"><iframe style="display: none"></iframe></span>
+                                        </div>
+
+                                        <div class="oe_form_binary_progress" style="display: none">
+                                          <img src="pos-ffx-2_files/throbber.gif" height="16" width="16"> <b>Uploading ...</b>
+                                        </div>
+                                      </div>
+
+                                      <div class="oe_title">
+                                        <h1><span original-title="" class="oe_form_field oe_form_field_char oe_inline oe_form_field_translatable"><span class="oe_form_char_content">Point of Sale</span></span></h1>
+
+                                        <h2 class="oe_fade"><span original-title="" class="oe_form_field oe_form_field_char oe_form_field_translatable"><span class="oe_form_char_content">Touchscreen Interface for Shops</span></span></h2>
+                                      </div>
+
+                                      <table class="oe_form_group" border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                          <tr class="oe_form_group_row">
+                                            <td colspan="1" class="oe_form_group_cell" width="50%">
+                                              <table class="oe_form_group" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                  <tr class="oe_form_group_row">
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_group_cell_label" width="1%"><label original-title="" for="oe-field-input-65" class=" oe_form_label oe_align_right">Author</label></td>
+
+                                                    <td colspan="1" class="oe_form_group_cell" width="99%"><span class="oe_form_field oe_form_field_char"><span class="oe_form_char_content">OpenERP SA</span></span></td>
+                                                  </tr>
+
+                                                  <tr class="oe_form_group_row">
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_group_cell_label" width="1%"><label original-title="" for="oe-field-input-66" class=" oe_form_label oe_align_right">Module Name</label></td>
+
+                                                    <td colspan="1" class="oe_form_group_cell" width="99%"><span class="oe_form_field oe_form_field_char oe_form_required"><span class="oe_form_char_content">point_of_sale</span></span></td>
+                                                  </tr>
+
+                                                  <tr class="oe_form_group_row">
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_group_cell_label" width="1%"><label original-title="" for="oe-field-input-67" class=" oe_form_label oe_align_right">Version</label></td>
+
+                                                    <td colspan="1" class="oe_form_group_cell" width="99%"><span class="oe_form_field oe_form_field_char oe_form_required"><span class="oe_form_char_content">7.0.1.0.1</span></span></td>
+                                                  </tr>
+
+                                                  <tr class="oe_form_group_row">
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_group_cell_label" width="1%"><label original-title="" for="oe-field-input-68" class=" oe_form_label oe_align_right">License</label></td>
+
+                                                    <td colspan="1" class="oe_form_group_cell" width="99%"><span class="oe_form_field oe_form_field_selection">Affero GPL-3</span></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+
+                                            <td colspan="1" class="oe_form_group_cell oe_group_right" width="50%">
+                                              <table class="oe_form_group" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                  <tr class="oe_form_group_row">
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_group_cell_label" width="1%"><label original-title="" for="oe-field-input-69" class=" oe_form_label oe_align_right">Category</label></td>
+
+                                                    <td colspan="1" class="oe_form_group_cell" width="99%"><span class="oe_form_field oe_form_field_selection">Point of Sale</span></td>
+                                                  </tr>
+
+                                                  <tr class="oe_form_group_row">
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_group_cell_label" width="1%"><label original-title="" for="oe-field-input-70" class=" oe_form_label oe_align_right">Downloads</label></td>
+
+                                                    <td colspan="1" class="oe_form_group_cell" width="99%"><span class="oe_form_field oe_form_field_float"><span class="oe_form_char_content">3516</span></span></td>
+                                                  </tr>
+
+                                                  <tr class="oe_form_group_row">
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_group_cell_label oe_form_invisible" width="1%"><label original-title="" for="oe-field-input-71" class="oe_form_label oe_align_right oe_form_invisible">Website</label></td>
+
+                                                    <td colspan="1" class="oe_form_group_cell oe_form_invisible" width="99%"><span class="oe_form_field oe_form_field_email oe_form_invisible"><a href="http://false/" class="oe_form_uri" target="_blank"></a></span></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+
+                                      <div class="oe_clear ui-tabs ui-widget ui-widget-content ui-corner-all">
+                                        <ul role="tablist" class="oe_notebook ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+                                          <li aria-selected="true" aria-labelledby="ui-id-3" aria-controls="notebook_page_72" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active"><a id="ui-id-3" tabindex="-1" role="presentation" class=
+                                          "ui-tabs-anchor" href="#notebook_page_72">Description</a></li>
+
+                                          <li aria-selected="false" aria-labelledby="ui-id-4" aria-controls="notebook_page_74" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-4" tabindex="-1" role="presentation" class="ui-tabs-anchor" href=
+                                          "#notebook_page_74">Changelog</a></li>
+
+                                          <li aria-selected="false" aria-labelledby="ui-id-5" aria-controls="notebook_page_75" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-5" tabindex="-1" role="presentation" class="ui-tabs-anchor" href=
+                                          "#notebook_page_75">Dependencies</a></li>
+                                        </ul>
+
+                                        <div aria-hidden="false" aria-expanded="true" style="display: block;" role="tabpanel" aria-labelledby="ui-id-3" class="oe_notebook_page ui-tabs-panel ui-widget-content ui-corner-bottom" id="notebook_page_72">
+                                          <div original-title="" class="oe_form_field oe_form_field_html oe_form_embedded_html oe_apps_description">
+                                            <!--?xml version="1.0" encoding="unicode" ?-->
+
+                                            <div class="document">
+                                              <div class="section" id="quick-and-easy-sale-process">
+                                                <h1>Quick and Easy sale process</h1>
+
+                                                <p>This module allows you to manage your shop sales very easily with a fully web based touchscreen interface. It is compatible with all PC tablets and the iPad, offering multiple payment methods.</p>
+
+                                                <p>Product selection can be done in several ways:</p>
+
+                                                <ul class="simple">
+                                                  <li>Using a barcode reader</li>
+
+                                                  <li>Browsing through categories of products or via a text search.</li>
+                                                </ul>
+
+                                                <div class="section" id="main-features">
+                                                  <h2>Main Features</h2>
+
+                                                  <ul class="simple">
+                                                    <li>Fast encoding of the sale</li>
+
+                                                    <li>Choose one payment method (the quick way) or split the payment between several payment methods</li>
+
+                                                    <li>Computation of the amount of money to return</li>
+
+                                                    <li>Create and confirm the picking list automatically</li>
+
+                                                    <li>Allows the user to create an invoice automatically</li>
+
+                                                    <li>Refund previous sales</li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="oe_apps_section" attrs="{'invisible':[('image_ids','=',[])]}">
+                                            <h2><label original-title="" for="oe-field-input-73" class=" oe_form_label oe_align_right">Screenshots</label></h2>
+
+                                            <div class="oe_apps_screenshots">
+                                              <div class="oe_form_field oe_form_field_one2many">
+                                                <div class="oe_view_manager">
+                                                  <table class="oe_view_manager_header">
+                                                    <colgroup>
+                                                      <col width="20%">
+                                                      <col width="35%">
+                                                      <col width="15%">
+                                                      <col width="30%">
+                                                    </colgroup>
+
+                                                    <tbody>
+                                                      <tr class="oe_header_row oe_header_row_top">
+                                                        <td colspan="2">
+                                                          <h2 class="oe_view_title"></h2>
+                                                        </td>
+
+                                                        <td colspan="2">
+                                                          <div class="oe_view_manager_view_search"></div>
+                                                        </td>
+                                                      </tr>
+
+                                                      <tr class="oe_header_row">
+                                                        <td>
+                                                          <div class="oe_view_manager_buttons">
+                                                            <div class="oe_kanban_buttons"></div>
+                                                          </div>
+                                                        </td>
+
+                                                        <td colspan="2">
+                                                          <div class="oe_view_manager_sidebar"></div>
+                                                        </td>
+
+                                                        <td>
+                                                          <ul class="oe_view_manager_switch oe_button_group oe_right"></ul>
+
+                                                          <div class="oe_view_manager_pager oe_right"></div>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+
+                                                  <div class="oe_view_manager_body">
+                                                    <div class="oe_view_manager_view_kanban">
+                                                      <div class="oe_kanban_view oe_view oe_cannot_create oe_cannot_edit oe_cannot_delete oe_kanban_ungrouped">
+                                                        <div class="oe_kanban_buttons"></div>
+
+                                                        <table class="oe_kanban_groups">
+                                                          <tbody>
+                                                            <tr class="oe_kanban_groups_headers">
+                                                              <td class="oe_kanban_group_header oe_kanban_no_group"></td>
+
+                                                              <td class="oe_kanban_dummy_cell"></td>
+                                                            </tr>
+
+                                                            <tr class="oe_kanban_groups_records">
+                                                              <td class="oe_kanban_column">
+                                                                <div class="oe_kanban_group_list_header"></div>
+
+                                                                <div class="oe_kanban_column_cards">
+                                                                  <div class="oe_fold_column oe_kanban_record">
+                                                                    <div style="min-height: 18px;" class="oe_apps_screenshot_box"><img src="pos-ffx-2_files/image_006.png"></div>
+                                                                  </div>
+
+                                                                  <div class="oe_fold_column oe_kanban_record">
+                                                                    <div style="min-height: 18px;" class="oe_apps_screenshot_box"><img src="pos-ffx-2_files/image_002.png"></div>
+                                                                  </div>
+
+                                                                  <div class="oe_fold_column oe_kanban_record">
+                                                                    <div style="min-height: 18px;" class="oe_apps_screenshot_box"><img src="pos-ffx-2_files/image_007.png"></div>
+                                                                  </div>
+
+                                                                  <div class="oe_fold_column oe_kanban_record">
+                                                                    <div style="min-height: 18px;" class="oe_apps_screenshot_box"><img src="pos-ffx-2_files/image.png"></div>
+                                                                  </div>
+
+                                                                  <div class="oe_fold_column oe_kanban_record">
+                                                                    <div style="min-height: 18px;" class="oe_apps_screenshot_box"><img src="pos-ffx-2_files/image_005.png"></div>
+                                                                  </div>
+                                                                </div>
+
+                                                                <div style="display: none;" class="oe_kanban_show_more">
+                                                                  <button class="oe_button">Show more... (<span class="oe_kanban_remaining">0</span> remaining)</button>
+                                                                </div>
+                                                              </td>
+
+                                                              <td class="oe_kanban_dummy_cell"></td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-4" class="oe_notebook_page ui-tabs-panel ui-widget-content ui-corner-bottom" id="notebook_page_74">
+                                          <div original-title="" class="oe_form_field oe_form_field_html oe_form_embedded_html"></div>
+                                        </div>
+
+                                        <div aria-hidden="true" aria-expanded="false" style="display: none;" role="tabpanel" aria-labelledby="ui-id-5" class="oe_notebook_page ui-tabs-panel ui-widget-content ui-corner-bottom" id="notebook_page_75">
+                                          <div class="oe_form_field oe_form_field_many2many" original-title="">
+                                            <div class="oe_list oe_view oe_cannot_create oe_cannot_edit oe_cannot_delete">
+                                              <table class="oe_list_content">
+                                                <thead>
+                                                  <tr>
+                                                    <th colspan="6">
+                                                      <div class="oe_list_buttons"></div>
+
+                                                      <div class="oe_list_sidebar"></div>
+
+                                                      <div class="oe_list_pager oe_list_pager_single_page" colspan="6">
+                                                        <div class="oe_pager_value">
+                                                          <span class="oe_list_pager_state">1-1 of 1</span>
+                                                        </div>
+
+                                                        <ul class="oe_pager_group">
+                                                          <li><a class="oe_i" type="button" data-pager-action="previous">(</a></li>
+
+                                                          <li><a class="oe_i" type="button" data-pager-action="next">)</a></li>
+                                                        </ul>
+                                                      </div>
+                                                    </th>
+                                                  </tr>
+
+                                                  <tr class="oe_list_header_columns">
+                                                    <th data-id="shortdesc" class="oe_list_header_char null">
+                                                      <div>
+                                                        Name
+                                                      </div>
+                                                    </th>
+
+                                                    <th data-id="author" class="oe_list_header_char null">
+                                                      <div>
+                                                        Author
+                                                      </div>
+                                                    </th>
+
+                                                    <th data-id="category_id" class="oe_list_header_many2one null">
+                                                      <div>
+                                                        Category
+                                                      </div>
+                                                    </th>
+
+                                                    <th data-id="version" class="oe_list_header_char null">
+                                                      <div>
+                                                        Version
+                                                      </div>
+                                                    </th>
+
+                                                    <th data-id="license" class="oe_list_header_selection null">
+                                                      <div>
+                                                        License
+                                                      </div>
+                                                    </th>
+
+                                                    <th data-id="download_count" class="oe_list_header_integer null">
+                                                      <div>
+                                                        Downloads
+                                                      </div>
+                                                    </th>
+                                                  </tr>
+                                                </thead>
+
+                                                <tfoot>
+                                                  <tr>
+                                                    <td class="oe_list_footer oe_number"></td>
+
+                                                    <td class="oe_list_footer oe_number"></td>
+
+                                                    <td class="oe_list_footer oe_number"></td>
+
+                                                    <td class="oe_list_footer oe_number"></td>
+
+                                                    <td class="oe_list_footer oe_number"></td>
+
+                                                    <td class="oe_list_footer oe_number"></td>
+                                                  </tr>
+                                                </tfoot>
+
+                                                <tbody>
+                                                  <tr data-id="177" style="">
+                                                    <td class="oe_list_field_cell oe_list_field_char oe_readonly" data-field="shortdesc">Sales and Warehouse Management</td>
+
+                                                    <td class="oe_list_field_cell oe_list_field_char oe_readonly" data-field="author">OpenERP SA</td>
+
+                                                    <td class="oe_list_field_cell oe_list_field_many2one oe_readonly" data-field="category_id">Technical Settings</td>
+
+                                                    <td class="oe_list_field_cell oe_list_field_char oe_readonly oe_required" data-field="version">7.0.1.0</td>
+
+                                                    <td class="oe_list_field_cell oe_list_field_selection oe_readonly" data-field="license">Affero GPL-3</td>
+
+                                                    <td class="oe_list_field_cell oe_list_field_integer oe_number oe_readonly" data-field="download_count">7251</td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td title="Name">&nbsp;</td>
+
+                                                    <td title="Author">&nbsp;</td>
+
+                                                    <td title="Category">&nbsp;</td>
+
+                                                    <td title="Version">&nbsp;</td>
+
+                                                    <td title="License">&nbsp;</td>
+
+                                                    <td title="Downloads">&nbsp;</td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td title="Name">&nbsp;</td>
+
+                                                    <td title="Author">&nbsp;</td>
+
+                                                    <td title="Category">&nbsp;</td>
+
+                                                    <td title="Version">&nbsp;</td>
+
+                                                    <td title="License">&nbsp;</td>
+
+                                                    <td title="Downloads">&nbsp;</td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <td title="Name">&nbsp;</td>
+
+                                                    <td title="Author">&nbsp;</td>
+
+                                                    <td title="Category">&nbsp;</td>
+
+                                                    <td title="Version">&nbsp;</td>
+
+                                                    <td title="License">&nbsp;</td>
+
+                                                    <td title="Downloads">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="oe_notification ui-notify"></div>
+
+                <div style="display: none;" class="oe_loading">
+                  Loading (1)
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="oe_notification ui-notify"></div>
+
+    <div style="display: none;" class="oe_loading">
+      Loading (1)
+    </div>
+  </div>
+
+  <ul style="z-index: 1; display: none;" tabindex="0" id="ui-id-1" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul>
+</body>
+</html>
