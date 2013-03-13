@@ -123,6 +123,10 @@ img.oe_picture{
     margin: 0;
     text-shadow: 0px 2px 0px rgb(77, 80, 146), 0px 2px 5px rgba(0, 0, 0, 0.33), 0px 0px 60px rgba(0, 0, 0, 0.22);
 }
+img.oe_right_block{
+    display: block;
+    margin-left: auto;
+}
 
 /* ----- APP DESCRIPTION ----- */
 
@@ -331,30 +335,36 @@ img.oe_picture{
 
 /*  ----- SLOGANS ----- */
 
-.oe_box_slogan {
+.oe_slogan{
     text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
-.oe_box_slogan h1{
+h1.oe_slogan{
     font-size: 64px;
     font-weight: 900;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
-.oe_box_slogan h2{
+h2.oe_slogan{
     font-size: 40px;
     font-weight: 300;
 }
-.oe_box_slogan h3{
+h3.oe_slogan{
     font-size: 32px;
     font-weight: 300;
     opacity: 0.5;
 }
-.oe_box_slogan h4{
+h4.oe_slogan{
     font-size: 24px;
     font-weight: 300;
 }
-.oe_box_slogan h2+h3{
-    margin-top: -30px;
+h5.oe_slogan{
 }
-.oe_box_slogan h4:before, .oe_box_slogan h4:after{
+h2.oe_slogan+h3.oe_slogan{
+    margin-top: -28px;
+}
+h4.oe_slogan:before, h4.oe_slogan:after{
     margin: 0 20px;
     content: "";
     display: inline-block;
@@ -363,7 +373,5 @@ img.oe_picture{
     border-top: solid 1px;
     vertical-align: middle;
     opacity: 0.3;
-}
-.oe_box.oe_box_slogan h5{
 }
 
