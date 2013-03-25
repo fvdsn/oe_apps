@@ -1,25 +1,74 @@
-body{
+@import url('normalize.css');
+
+/* --------------------------------- * 
+ *          STYLING CONTEXT          *
+ * --------------------------------- */
+
+/* --- styling for v8 Lato white purple design --- */
+
+.oe_styling_v8{
+    font-family: 'Lato';
+    font-weight: 300;
+    color: #333;
+    background: white;
+    font-size: 16px;
+}
+body.oe_styling_v8{
     background: #f5f5f5;
     padding: 0px;
     margin: 0px;
 }
-.oe_page {
-    margin: 64px auto;
+.oe_styling_v8 .oe_emph{
+    font-weight: 400;
+}
+.oe_styling_v8 a{
+    color: rgb(91, 40, 179);
+}
+.oe_styling_v8 .oe_page, .oe_styling_v8.oe_page{
     background: white;
     border-radius: 1px;
     border-top: solid 1px white;
-    /*border: solid 1px rgb(230,230,230);*/
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    font-family: 'Lato';
-    font-weight: 300;
-    color: #333;
-    max-width: 992px;
 }
-.oe_emph{
-    font-weight: 400;
+
+/* ------ oe_app_description integration ------ */
+
+/* these declaration are used to integrate the layout into 
+ * a form_field for openerp application description */
+
+.openerp .oe_form .oe_form_field.oe_app_description{
+    width: auto;
+    display: block;
+    margin: 0px -16px -16px -16px;
+    padding: 0px;
 }
-a {
-    color: rgb(91, 40, 179);
+
+/* changing cells sizes to fit form view width */
+
+.oe_form_field.oe_app_description .oe_row { width: 860px; } 
+.oe_form_field.oe_app_description .oe_span12 { width: 860px; } 
+.oe_form_field.oe_app_description .oe_span8  { width: 573px; } 
+.oe_form_field.oe_app_description .oe_span6  { width: 430px; }
+.oe_form_field.oe_app_description .oe_span4  { width: 286px; } 
+.oe_form_field.oe_app_description .oe_span3  { width: 232px; } 
+.oe_form_field.oe_app_description .oe_span2  { width: 154px; } 
+
+/* reseting the default headers margins */
+
+.oe_form_field.oe_app_description h1{ margin: 0.67em 0; }
+.oe_form_field.oe_app_description h2{ margin: 0.67em 0; }
+.oe_form_field.oe_app_description h3{ margin: 0.67em 0; }
+.oe_form_field.oe_app_description h4{ margin: 0.67em 0; }
+.oe_form_field.oe_app_description h5{ margin: 0.67em 0; }
+
+.oe_form_field.oe_app_description h1.oe_slogan{ margin: 32px 0; }
+.oe_form_field.oe_app_description h2.oe_slogan{ margin: 32px 0; }
+.oe_form_field.oe_app_description h3.oe_slogan{ margin: 32px 0; }
+.oe_form_field.oe_app_description h4.oe_slogan{ margin: 32px 0; }
+.oe_form_field.oe_app_description h5.oe_slogan{ margin: 16px 0; }
+
+.oe_form_field.oe_description h2.oe_slogan+h3.oe_slogan{
+    margin-top: -28px;
 }
 
 /* --------------------------------- * 
@@ -28,7 +77,13 @@ a {
 
 /* ------ BASE GRID CONSTRUCTS ----- */
 
+.oe_page{
+    margin: 64px auto;
+    max-width: 992px;
+}
+
 .oe_container {}
+
 .oe_row{
     margin-top: 16px;
     margin-bottom: 16px;
@@ -36,6 +91,7 @@ a {
     margin-right: auto;
     width: 928px;
 }
+
 .oe_clearfix:after, .oe_row:after{
     content:".";
     display: block;
@@ -60,6 +116,7 @@ a {
 
 .oe_row.oe_flex [class*='oe_span']{
     display: inline-block;
+    float: none;
     vertical-align: top;
     box-sizing: border-box;
     padding: 0 16px;
@@ -112,6 +169,48 @@ a {
 }
 .oe_row.oe_rightalign{
     text-align: right;
+}
+
+/*  ----- SLOGANS ----- */
+
+.oe_slogan{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+h1.oe_slogan{
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+h2.oe_slogan{
+    font-size: 40px;
+    font-weight: 300;
+}
+h3.oe_slogan{
+    font-size: 32px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+h4.oe_slogan{
+    font-size: 24px;
+    font-weight: 300;
+}
+h5.oe_slogan{
+}
+h2.oe_slogan+h3.oe_slogan{
+    margin-top: -28px;
+}
+h4.oe_slogan:before, h4.oe_slogan:after{
+    margin: 0 20px;
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 0px;
+    border-top: solid 1px;
+    vertical-align: middle;
+    opacity: 0.3;
 }
 
 /* ----- BUTTONS ----- */
@@ -366,6 +465,7 @@ img.oe_right_block{
     background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,0.06));
     box-shadow: 0px -3px 10px -5px rgba(0,0,0,0.1) inset;
 }
+
 /*  ----- TABS ----- */
 
 .oe_row_tabs{
@@ -409,45 +509,4 @@ img.oe_right_block{
     top: 0px;
 }
 
-/*  ----- SLOGANS ----- */
-
-.oe_slogan{
-    text-align: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-h1.oe_slogan{
-    font-size: 64px;
-    font-weight: 900;
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
-h2.oe_slogan{
-    font-size: 40px;
-    font-weight: 300;
-}
-h3.oe_slogan{
-    font-size: 32px;
-    font-weight: 300;
-    opacity: 0.5;
-}
-h4.oe_slogan{
-    font-size: 24px;
-    font-weight: 300;
-}
-h5.oe_slogan{
-}
-h2.oe_slogan+h3.oe_slogan{
-    margin-top: -28px;
-}
-h4.oe_slogan:before, h4.oe_slogan:after{
-    margin: 0 20px;
-    content: "";
-    display: inline-block;
-    width: 100px;
-    height: 0px;
-    border-top: solid 1px;
-    vertical-align: middle;
-    opacity: 0.3;
-}
 
