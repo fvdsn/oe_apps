@@ -9,7 +9,7 @@
 
 /* --- Styling for the V8/Lato/White/Purple design --- */
 
-@import "lato.css"
+/*@import "lato.css"*/
 
 $v8_font_color:   rgb(51,51,51)
 $v8_body_color:   rgb(245,245,245)
@@ -32,8 +32,6 @@ body.oe_styling_v8
   a
     color: $v8_anchor_color
 
-  .oe_emph
-    font-weight: 400
 
   .oe_page
     background: $v8_bg_color
@@ -41,12 +39,19 @@ body.oe_styling_v8
     +border-radius(1px)
     +box-shadow(0 2px 4px rgba(0,0,0,0.2))
 
+  .oe_emph
+    font-weight: 400
+
   .oe_dark
     background: rgba(0,0,0,0.03)
     +box-shadow(0px 5px 9px -7px rgba(0,0,0,0.5) inset, 0px -3px 9px -7px rgba(0,0,0,0.5) inset)
 
-/* --- Styling Modifiers for the V8 design --- */
 
+/* --- Styling for the V8/Lato/Black/Purple design --- */
+
+.oe_styling_v8.oe_styling_black
+  background: rgba(0,0,0,0.8)
+  color: white
   
 
 
@@ -57,7 +62,7 @@ body.oe_styling_v8
 /* ------ BASE GRID CONSTRUCTS ----- */
 
 .oe_page
-  margin: 64px auto
+  margin: -32px auto 64px auto
   max-width: 992px
 
 .oe_container
@@ -103,6 +108,13 @@ $oe_span2_width:  154px
   width: $oe_span3_width
 .oe_span2
   width: $oe_span2_width
+
+[class*='oe_span'].oe_fit
+  padding-left: 0px
+  padding-right: 0px
+
+[class*='oe_span'].oe_right
+  float: right
 
 .oe_row.oe_flex
   [class*='oe_span']
@@ -479,6 +491,160 @@ img.oe_picture.oe_screenshot
   float: right
   padding-right: 8px
   font-weight: 400
+
+/* ----- OpenERP LOGO ----- */
+
+.oe_logo
+  display: inline-block
+  font-size: 27px
+  font-style: none
+  color: $v8_font_color
+  +user-select(none)
+  
+  .oe_open
+    font-style: italic
+    font-weight: 400
+    color: rgb(230,0,0)
+    position: relative
+    bottom: 0.2em
+    margin-left: 0.07em
+
+  .oe_erp
+    font-weight: 600
+    position: relative
+    bottom: 0.2em
+  
+  .oe_moto
+    display: block
+    font-size: 0.4em
+    margin-top: -0.9em
+    
+    
+
+/* ----- WEBSITE HEADER ----- */
+
+.oe_website_header
+  max-width: 992px
+  margin: 16px auto 0px auto 
+
+  .oe_website_logo
+    position: relative
+    top: 3px
+
+.oe_top_menu
+  text-align: right
+
+.oe_top_menu_entry
+  display: inline-block
+  padding: 8px 16px
+  position: relative
+  color: rgb(120,120,120)
+  cursor: pointer
+  a
+    color: inherit
+    text-decoration: none
+    -webkit-transition: color 75ms linear
+    &:hover
+      color: black
+  .icon-angle-down
+    font-size: 14px
+    opacity: 0.5
+    padding-left: 2px
+
+.oe_top_menu_entry .oe_submenu
+  display: inline-block
+  position: absolute
+  visibility: hidden
+  +opacity(0)
+  top: 100%
+  left: 0px
+  padding: 4px 0px
+  width: 160px
+  background: white
+  text-align: left
+  border-radius: 2px
+  box-shadow: 0px 2px rgb(182,182,182), 0px 2px 10px rgba(0,0,0, 0.08)
+  +transition-property(opacity)
+  +transition-duration(100ms)
+  .oe_submenu_entry
+    padding: 8px 16px
+    a
+      display: block
+
+.no-touch .oe_top_menu_entry:hover .oe_submenu, .oe_top_menu_entry.oe_touched .oe_submenu
+  visibility: visible
+  +opacity(1)
+
+
+
+
+
+
+.oe_top_menu_entry.oe_active
+  font-weight: 400
+  color: black
+  cursor: pointer
+
+.oe_top_menu_entry.oe_sign_in
+  background: rgb(250,250,250)
+  padding: 4px 8px
+  margin: 4px 8px
+  border-radius: 2px
+  border: solid 1px rgb(235,235,235)
+  a
+    color: inherit
+
+/* ---- WEBSITE HERO ----- */
+
+.oe_hero
+  height: 400px
+  background: gray
+  background-size: cover
+  +box-shadow(0px 10px 10px -5px rgba(0,0,0,0.15) inset)
+
+/* ---- WEBSITE FOOTER ---- */
+
+.oe_website_footer
+  margin-top: 64px
+  background: rgb(233,233,233)
+  border-top: solid 1px rgb(224,224,224)
+  padding-bottom: 32px
+  padding-top: 32px
+  i
+    opacity: 0.5
+  a 
+    color: inherit
+    text-decoration: inherit
+    &:hover
+      color: black
+  h1
+    font-size: 20px
+    font-weight: 400
+    border-bottom: solid 1px rgba(0,0,0,0.06)
+    margin-right: 24px
+    padding-bottom: 6px
+    margin-bottom: 6px
+    margin-top: 24px
+  h2
+    font-size: 17px
+    margin: 0
+    margin-top: 12px
+    margin-bottom: 0px
+    font-weight: 300
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+  li
+    display: block
+    margin-bottom: 4px
+    font-size: 14px
+    margin-right: 32px
+  li.oe_small
+    font-size: 12px
+    margin-right: 64px
+
+  
 
 
 

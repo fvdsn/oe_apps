@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Welcome to OpenERP</title>
+        <!--<link rel='stylesheet' href='css/lato.css'>-->
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='css/style_fva.css'>
+        <link rel='stylesheet' href='css/font-awesome.css'>
+        <link rel='stylesheet' href='css/homepage.css'>
+        <script src="js/lib/jquery-1.9.1.min.js"></script>
+        <script src='js/main.js'></script>
+        <script>
+            $(function(){
+                if (!("ontouchstart" in document.documentElement)){
+                    document.documentElement.className += " no-touch";
+                }else{
+                    $('.oe_detect_touches').click(function(){
+                        $(this).toggleClass('oe_touched');
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body class='oe_styling_v8'>
+        <header class='oe_website_header'>
+            <div class='oe_row oe_fit'>
+                <div class='oe_span4 '>
+                    <a href='#'>
+                    <span class='oe_logo'>
+                        <span class='oe_open'>Open</span><span class='oe_erp'>ERP</span>
+                        <span class='oe_moto'>open source business apps</span>
+                    </span>
+                    </a>
+                </div>
+                <nav class='oe_span8 oe_right oe_top_menu'>
+                    <div class='oe_top_menu_entry oe_active'>Home</div>
+                    <div class='oe_top_menu_entry oe_detect_touches'>
+                        Applications <i class='icon-angle-down'></i>
+                        <div class='oe_submenu'>
+                            <div class='oe_submenu_entry'><a href='#'>Sales</a></div>
+                            <div class='oe_submenu_entry'><a href='#'>Point of Sale</a></div>
+                            <div class='oe_submenu_entry'><a href='#'>Project</a></div>
+                            <div class='oe_submenu_entry'><a href='#'>Accounting</a></div>
+                            <div class='oe_submenu_entry'><a href='#'>Purchases</a></div>
+                            <div class='oe_submenu_entry'><a href='#'>Warehouse</a></div>
+                            <div class='oe_submenu_entry'><a href='#'>Manufacturing</a></div>
+                            <div class='oe_submenu_entry'><a href='#'>Human Resources</a></div>
+                        </div>
+                    </div>
+                    <div class='oe_top_menu_entry'><a href='#'>Pricing</a></div>
+                    <div class='oe_top_menu_entry'><a href='#'>Partners</a></div>
+                    <div class='oe_top_menu_entry'><a href='#'>About Us</a></div>
+                    <div class='oe_top_menu_entry oe_sign_in'><a href='#'>Sign In</a></div>
+                </nav>
+            </div>
+        </header>
+        <section class='oe_hero oe_home_hero'>
+        </section>
+
+        <article class='oe_page'>
+            <h1 class='oe_slogan'>Big Slogan</h1>
+            <h2 class='oe_slogan'>All the features you want, none of the clutter</h2>
+            <h3 class='oe_slogan'>We handle all the details.</h3>
+            <h4 class='oe_slogan'>Featured in the press by</h4>
+
+            <section class='oe_container'>
+                <div class='oe_row'>
+                    <div class='oe_span6'>
+                        <div class='oe_row_img oe_centeralign'>
+                            <img src='img/pic_pos_flat.png'>
+                        </div>
+                    </div>
+                    <div class='oe_span6'>
+                        <h3>Box Title</h3>
+                        <p>
+                        This is a sample paragraph with a quite cool description of the product,
+                        that will make the user want to buy it.
+                        </p>
+                        <p>
+                        There can also be many paragraph that will explain various of the cool features
+                        and stuff.
+                        </p>
+                        <p> 
+                        There can even be a third paragraph, but don't write a novel in here. It's meant
+                        to be short.
+                        </p>
+                        <div class='oe_button'>Button</div>
+                    </div>
+                </div>
+                <h4 class='oe_slogan'>Subslogan</h4>
+            </section>
+
+            <section class='oe_container oe_dark'>
+                <div class='oe_row'>
+                    <div class='oe_span6'>
+                        <h3>Box Title</h3>
+                        <p>
+                        This is a sample paragraph with a quite cool description of the product,
+                        that will make the user want to buy it.
+                        </p>
+                        <p>
+                        There can also be many paragraph that will explain various of the cool features
+                        and stuff.
+                        </p>
+                        <p> 
+                        There can even be a third paragraph, but don't write a novel in here. It's meant
+                        to be short.
+                        </p>
+                    </div>
+                    <div class='oe_span6 oe_rightalign oe_rightfit'>
+                        <img src='img/pic_pos_inset.png' class='oe_right_block'>
+                    </div>
+                </div>
+            </section>
+
+            <section class='oe_container'>
+                <div class='oe_row'>
+                    <h2 class='oe_slogan'>All the features you want, none of the clutter</h2>
+                    <h3 class='oe_slogan'>You gonna be amazed</h2>
+                    <div class='oe_span6'>
+                        <div class='oe_bg_img'>
+                            <img src='img/pic_pos_flat.png'>
+                        </div>
+                    </div>
+                    <div class='oe_span6'>
+                        <h3>Box Title</h3>
+                        <p>
+                        This is a sample paragraph with a quite cool description of the product,
+                        that will make the user want to buy it.
+                        </p>
+                        <p class='oe_emph'>
+                        There can also be many paragraph that will explain various of the cool features
+                        and stuff.
+                        </p>
+                        <p> 
+                        There can even be a third paragraph, but don't write a novel in here. It's meant
+                        to be short. And you can put <span class='oe_button oe_small'>buttons</span> in text too ! 
+                       </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class='oe_container oe_separator'>
+            </section>
+
+            <section class='oe_container'>
+                <div class='oe_row'>
+                    <div class='oe_span6'>
+                        <h3>Box Title</h3>
+                        <p>
+                        This is a sample paragraph with a quite cool description of the product,
+                        that will make the user want to buy it.
+                        </p>
+                        <p>
+                        There can also be <a href='#'>many paragraph that will</a> explain various of the cool features
+                        and stuff.
+                        </p>
+                        <p> 
+                        There can even be a third paragraph, but don't write a novel in here. It's meant
+                        to be short.
+                        </p>
+                    </div>
+                    <div class='oe_span6'>
+                        <img class='oe_picture' src='img/pic_big.png'>
+                    </div>
+                </div>
+            </section>
+
+            <section class='oe_container'>
+                <div class='oe_row oe_centeralign oe_spaced'>
+                    <span class='oe_button oe_big'> Really Big Button </span>
+                </div>
+            </section>
+
+            <section class='oe_container'>
+                <div class='oe_row oe_flex oe_centeralign oe_more_spaced'>
+                    <div class='oe_span2'>
+                        <img src='img/logo_entrepreneur.png'>
+                    </div>
+                    <div class='oe_span2'>
+                        <img src='img/logo_fast.png'>
+                    </div>
+                    <div class='oe_span2'>
+                        <img src='img/logo_mashable.png'>
+                    </div>
+                    <div class='oe_span2'>
+                        <img src='img/logo_tc.png'>
+                    </div>
+                    <div class='oe_span2'>
+                        <img src='img/logo_usa.png'>
+                    </div>
+                </div>
+            </section>
+
+            <section class='oe_container'>
+                <div class='oe_row oe_more_spaced'>
+                    <div class='oe_span6'>
+                        <div class='oe_quote'>
+                            <q>
+                                I am completely satisfied with the product, I recommend it
+                                heartily.
+                            </q>
+                            <cite class='oe_clearfix'>
+                                <img class='oe_photo' src='img/photo_girl_64.png'>
+                                <div class='oe_author'>Alicia Buckyballs</div>
+                                <div class='oe_job'>Founder and CEO of EVIL CORP.</div>
+                            </cite>
+                        </div>
+                    </div>
+                    <div class='oe_span6'>
+                        <div class='oe_quote'>
+                            <q>
+                                I have been looking for a product like this for a long time. 
+                                I can't believe it really works that well
+                            </q>
+                            <cite class='oe_cite oe_clearfix'>
+                                <img class='oe_photo' src='img/photo_man_64.png'>
+                                <div class='oe_author'>J. Christ Junior.</div>
+                                <div class='oe_job'>Chief Evangelist at Church Inc.</div>
+                            </cite>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='oe_container oe_dark'>
+                <div class='oe_row oe_more_padded oe_more_spaced'>
+                    <div class='oe_span6'>
+                        <div class='oe_quote'>
+                            <q>
+                                I am completely satisfied with the product, I recommend it
+                                heartily.
+                            </q>
+                            <cite class='oe_clearfix'>
+                                <img class='oe_photo' src='img/photo_indian_64.png'>
+                                <div class='oe_author'>Apu Prapubadesh</div>
+                                <div class='oe_job'>Funny Indian Guy.</div>
+                            </cite>
+                        </div>
+                    </div>
+                    <div class='oe_span6'>
+                        <div class='oe_quote'>
+                            <q>
+                                I have been looking for a product like this for a long time. 
+                                I can't believe it really works that well
+                            </q>
+                            <cite class='oe_cite oe_clearfix'>
+                                <img class='oe_photo' src='img/photo_african_64.png'>
+                                <div class='oe_author'>Jade Banako-Motu</div>
+                                <div class='oe_job'>Chairman, Solidarity International.</div>
+                            </cite>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='oe_container'>
+                <div class='oe_row oe_fit oe_pic_ctr'>
+                    <h2 class='oe_title'>Related Picture</h2>
+                    <img class='oe_picture' src='img/pic_designshop_verylarge.jpg'>
+                </div>
+            </section>
+
+        </article>
+        <footer class='oe_website_footer'>
+            <article class='oe_row'>
+                <section class='oe_span3'>
+                    <h1>OpenERP</h1>
+                    <ul>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>Pricing</a></li>
+                        <li><a href='#'>Partnership</a></li>
+                        <li><a href='#'>Download</a></li>
+                        <li><a href='#'>Support</a></li>
+                    </ul>
+                </section>
+                <section class='oe_span3'>
+                    <h1>Ressources</h1>
+                    <ul>
+                        <li><a href='#'>Documentation</a></li>
+                        <li><a href='#'>Trainings</a></li>
+                        <li><a href='#'>Books</a></li>
+                        <li><a href='#'>Apps</a></li>
+                    </ul>
+                </section>
+                <section class='oe_span3'>
+                    <h1>Community</h1>
+                    <ul>
+                        <li><a href='#'>Events</a></li>
+                        <li><a href='#'>Forum</a></li>
+                        <li><a href='#'><i class='icon-facebook-sign'></i>Facebook</a></li>
+                        <li><a href='#'><i class='icon-twitter-sign'></i>Twitter</a></li>
+                    </ul>
+                </section>
+                <section class='oe_span3'>
+                    <h1>About Us</h1>
+                    <ul>
+                        <li><a href='#'>News</a></li>
+                        <li><a href='#'>Jobs</a></li>
+                        <li><a href='#'>Investor Relations</a></li>
+                        <li><a href='#'>Our Team</a></li>
+                        <li><a href='#'>Contact Us</a></li>
+                    </ul>
+                </section>
+            </article>
+            <article class='oe_row'>
+                <div class='oe_span12'>
+                    <h1>Offices</h1>
+                </div>
+                <section class='oe_span3 vcard'>
+                    <h2 class='fn org'>Europe/Africa Sales</h2>
+                    <ul>
+                        <li class='oe_small adr'>
+                            <span class='street-address'>Avenue van Nieuwenhyselaan, 5 (Serenitas building)</span> 
+                            <span class='postcode'>1160</span> 
+                            <span class='locality'>Brussels</span>, 
+                            <span class='country-name'>Belgium</span>
+                        </li>
+                        <li class='tel'><a href='tel:+32 2 290 34 90'><i class='icon-phone'></i>+32 2 290 34 90</a></li>
+                    </ul>
+                </section>
+                <section class='oe_span3 vcard'>
+                    <h2 class='fn org'>Services & R&D</h2>
+                    <ul>
+                        <li class='oe_small adr'>
+                            <span class='street-address'>Chaussée de Namur, 40</span>
+                            <span class='postcode'>1367</span>
+                            <span class='locality'>Grand-Rosière</span>, 
+                            <span class='country-name'>Belgium</span>
+                        </li>
+                        <li class='tel'><a href='tel:+32 81 81 37 00'><i class='icon-phone'></i>+32 81 81 37 00</a></li>
+                    </ul>
+                </section>
+                <section class='oe_span3 vcard'>
+                    <h2 class='fn org'>Americas Sales</h2>
+                    <ul>
+                        <li class='oe_small adr'>
+                            <span class='street-address'>260 Main Street</span>, 
+                            <span class='post-office-box'>Suite 203</span>
+                            <span class='locality'>Redwood City</span>,
+                            <span class='region'>CA</span>
+                            <span class='postal-code'>94063</span>,
+                            <span class='country-name'>United States</span>
+                        </li>
+                        <li class='tel'><a href='tel:+1(650)307-6736'><i class='icon-phone'></i>+1(650)307-6736</a></li>
+                    </ul>
+                </section>
+                <section class='oe_span3 vcard'>
+                    <h2 class='fn org'>Asia Pacific Sales, Services, R&D</h2>
+                    <ul>
+                        <li class='oe_small adr'>
+                            <span class='street-address'>16 / 17, IT Tower 1 Infocity Gate - 1</span>
+                            <span class='locality'>Gandhinagar</span> - 
+                            <span class='postal-code'>382007</span>, 
+                            <span class='region'>Gujarat</span>
+                            <span class='country-name'>India</span>
+                        </li>
+                        <li class='tel'><i class='icon-phone'></i><a href='tel:+91(79)40 500 100'>+91(79)40 500 100</a></li>
+                    </ul>
+                </section>
+            </article> 
+        </footer>
+    </body>
+</html>
